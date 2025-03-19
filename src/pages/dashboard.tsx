@@ -13,18 +13,18 @@ export default function Dashboard() {
                 <div style={{height:30, marginLeft:20}}>
                     <img style={{height:"100%", objectFit:"contain"}} src={menu} alt="" />
                 </div>
-                <div>TrustFund Home</div>
+                <div className="audiowide">TrustFund Home</div>
                 <div></div>
             </div>
 
             <div className='container'>
 
-                <p style={{ margin: "20px 0" }}>Welcome, MW L&M record</p>
+                <p style={{ margin: "20px 0", fontWeight:"bold" }}>Welcome, MW L&M record</p>
                 <div className="dashboard-container">
                     <div>
                     <div className="accounts">
                         <div style={{ marginLeft: 10, fontSize: 20, color: "gray" }}>
-                            <p>Accounts</p>
+                            <p style={{fontWeight:"bold"}}>Accounts</p>
                         </div>
                         <div className="acc-summary">
                             <div>
@@ -43,7 +43,7 @@ export default function Dashboard() {
                     </div>
 
                     <div className="dashboard-options">
-                        <p style={{ textAlign: "center", fontSize: 20, color: "gray", fontWeight: "bold" }}>Trustfund</p>
+                        <p style={{ textAlign: "center", fontSize: 20, color: "gray", fontWeight: "bold" }} className="audiowide">Trustfund</p>
                         <div className="dash-options">
                             <div className="items" style={{ cursor: "pointer" }} onClick={() => toast.warning("You do not have permission to perform this task")}>
                                 <div className="item-img">
@@ -74,7 +74,7 @@ export default function Dashboard() {
                     </div>
                     <div className="transactions">
                         <div style={{ fontSize: 18, color: "gray" }}>
-                            <p>Transactions</p>
+                            <p style={{fontWeight:"bold"}}>Transactions</p>
                         </div>
                         <br />
                         <div className="txn-item" style={{ marginRight: 10 }}>

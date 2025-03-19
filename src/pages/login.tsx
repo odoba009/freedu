@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import {Link, useNavigate } from "react-router-dom";
 import "./css/auth.css";
 import React from "react";
 import { toast } from "react-toastify";
@@ -46,7 +46,7 @@ export default function Login() {
 
 <div className="auth-container">
         <div className="auth-brand">
-          <h1 style={{ "fontFamily": "Audiowide;" }} >Trustbank</h1>
+         <Link style={{color:"black", textDecoration:"none", fontWeight:"800"}} to={"/"}> <h1 style={{ "fontFamily": "Audiowide;" }} className="audiowide" >Trustbank</h1> </Link>
         </div>
 
         <div className="auth-form-container">

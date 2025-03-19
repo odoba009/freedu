@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "./css/auth.css";
 import React from "react";
 import { toast } from "react-toastify";
+import { wait } from "../utils/waiter";
 
 type Login = {
     username: string,
@@ -13,6 +14,7 @@ export default function Login() {
         username:"",
         password:""
     });
+    const [isLoading, setIsLoading] = React.useState(false);
 
     const navigate = useNavigate();
     
@@ -23,9 +25,12 @@ export default function Login() {
         }))
     }
 
-    function handleSubmit(event: React.FormEvent<HTMLFormElement>){
+    async function handleSubmit(event: React.FormEvent<HTMLFormElement>){
         event.preventDefault();
-        if(formInput.username === "mwlnmrecord" && formInput.password === "myrecordpass$"){
+        setIsLoading(true);
+        await wait(5000);
+        setIsLoading(false);
+        if(formInput.username.toLowerCase() === "morganproject" && formInput.password === "TrustfundsSSA"){
             toast.success("Login successful!")
             return navigate("/dashboard")
         }else{
@@ -35,39 +40,73 @@ export default function Login() {
 
   return (
     <div>
-        <div style={{textAlign:"center", padding:"20px 0", fontSize:20, fontWeight:"bold"}} className="">
- 
-        Freedo
-    </div>
 
     <div className="" style={{minHeight:"70vh", display:"flex", justifyContent:"center", alignItems:"center", marginBottom:"20px"}}>
-        <form action="" method="post" onSubmit={handleSubmit}>
-        <div className="auth-form" style={{width:"100%"}}>
-            <p style={{textAlign:"center", fontSize:20, fontWeight:"bold", margin:"30px 0"}}>Login</p>
+   
 
-            <div className="input-field">
-                <label htmlFor="">Username</label>
-                <input onChange={handleInputChange} type="text" name="username" />
-            </div>
-            <div className="input-field">
-                <label htmlFor="">Password</label>
-                <input onChange={handleInputChange} type="password" name="password" />
-            </div>
-
-            
-                <div style={{marginBottom:10}}>
-                    <input type="checkbox" name="" id="" />
-                    <span style={{marginRight:5}}></span>
-                    <label htmlFor="">Remeber me</label>
-                </div>
-            
-
-            <div className="input-field">
-                <button type="submit">Login</button>
-            </div>
+<div className="auth-container">
+        <div className="auth-brand">
+          <h1 style={{ "fontFamily": "Audiowide;" }} >Trustbank</h1>
         </div>
-        <p style={{marginTop: 10, fontSize:"small"}}>Don't have an account with us? <Link to={""}>Register now</Link> </p>
-        </form>
+
+        <div className="auth-form-container">
+          <div style={{ "paddingTop": "30px" }} className="heading">
+            <h1 style={{ "fontWeight": "bolder", "fontSize": "20px", "textAlign": "center" }}>
+              Signin
+            </h1>
+          </div>
+
+          <form onSubmit={handleSubmit} style={{ "padding": "20px 40px 40px 40px" }} action="" method="POST">
+
+            <div className="field">
+              <label className="label">Username</label>
+              <div className="control">
+                <input onChange={handleInputChange} type="text" name='username' className="input is-medium" required />
+              </div>
+            </div>
+
+            <div className="field">
+              <label className="label">Password</label>
+              <div className="control">
+                <input onChange={handleInputChange} type="password" name='password' className="input is-medium" required />
+
+              </div>
+            </div>
+
+            <div className="field">
+              <div className="control" style={{ display: "flex" }}>
+                <input type="checkbox" /> <span style={{ marginLeft: 5 }}></span>
+                <label className="checkbox">
+
+                  Remember Me
+                </label>
+              </div>
+            </div>
+
+
+
+            <div style={{ "marginTop": "20px;" }} className="field is-grouped">
+              <div style={{ "width": "100%" }} className="control">
+                <div className="gradient-button">
+                  {!isLoading?
+
+                  
+                  <button type="submit" >
+                    Sign me in
+                </button>
+                :
+                  <button type="button" >
+                    Please wait.......
+                </button>}
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+
+      </div>
         
     </div>
 

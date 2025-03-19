@@ -1,6 +1,7 @@
 import "./css/dashboard.css"
 import transfer from "../assets/transfer.png"
 import loan from "../assets/loan.png"
+import menu from "../assets/menu.png"
 import deposit from "../assets/deposit.png"
 import info from "../assets/info.png"
 import { toast } from 'react-toastify'
@@ -9,8 +10,10 @@ export default function Dashboard() {
     return (
         <div>
             <div className="dashboard-nav">
-                <div></div>
-                <div>Freedo Home</div>
+                <div style={{height:30, marginLeft:20}}>
+                    <img style={{height:"100%", objectFit:"contain"}} src={menu} alt="" />
+                </div>
+                <div>TrustFund Home</div>
                 <div></div>
             </div>
 
@@ -40,7 +43,7 @@ export default function Dashboard() {
                     </div>
 
                     <div className="dashboard-options">
-                        <p style={{ textAlign: "center", fontSize: 20, color: "gray", fontWeight: "bold" }}>Freedo</p>
+                        <p style={{ textAlign: "center", fontSize: 20, color: "gray", fontWeight: "bold" }}>Trustfund</p>
                         <div className="dash-options">
                             <div className="items" style={{ cursor: "pointer" }} onClick={() => toast.warning("You do not have permission to perform this task")}>
                                 <div className="item-img">

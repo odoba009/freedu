@@ -33,7 +33,7 @@ export default function Dashboard() {
                             </div>
 
                             <div>
-                                <p>$41,463,000.00</p>
+                                <p>$41,463,000.37</p>
                                 <p><small>Available</small></p>
                             </div>
                         </div>
@@ -80,7 +80,7 @@ export default function Dashboard() {
                         <div className="txn-item" style={{ marginRight: 10 }}>
                             <div>
                                 <p style={{ fontWeight: "bold" }}>Wire Transfer - Investment-POI Holdings TXN286ft57-68</p>
-                                <small style={{ color: "gray" }}>Dec 22, 2024. Checking</small>
+                                <small style={{ color: "gray" }}>Jan 22, 2025. Checking</small>
                             </div>
 
                             <div style={{ fontWeight: "bold", color: "red" }}>
@@ -116,7 +116,7 @@ export default function Dashboard() {
                         <div className="txn-item" style={{ marginRight: 10 }}>
                             <div>
                                 <p style={{ fontWeight: "bold" }}>Deposit - x2983</p>
-                                <small style={{ color: "gray" }}>Nov 30, 2022. Checking</small>
+                                <small style={{ color: "gray" }}>Feb 11, 2023. Checking</small>
                             </div>
 
                             <div style={{ fontWeight: "bold", color: "green" }}>
@@ -127,8 +127,8 @@ export default function Dashboard() {
                         {/* Txn */}
                         <div className="txn-item" style={{ marginRight: 10 }}>
                             <div>
-                                <p style={{ fontWeight: "bold" }}>Wire Transfer - Client Refund - Laura Smith - x2983</p>
-                                <small style={{ color: "gray" }}>Nov 30, 2022. Checking</small>
+                                <p style={{ fontWeight: "bold" }}>Wire Transfer - Client Refund - Laura Smith</p>
+                                <small style={{ color: "gray" }}>Sep 30, 2022. Checking</small>
                             </div>
 
                             <div style={{ fontWeight: "bold", color: "red" }}>
@@ -140,7 +140,7 @@ export default function Dashboard() {
                         <div className="txn-item" style={{ marginRight: 10 }}>
                             <div>
                                 <p style={{ fontWeight: "bold" }}>Wire Transfer - Investment JKL Partners - x2983</p>
-                                <small style={{ color: "gray" }}>May 15, 2022. Checking</small>
+                                <small style={{ color: "gray" }}>Dec 15, 2021. Checking</small>
                             </div>
 
                             <div style={{ fontWeight: "bold", color: "red" }}>
@@ -152,7 +152,7 @@ export default function Dashboard() {
                         <div className="txn-item" style={{ marginRight: 10 }}>
                             <div>
                                 <p style={{ fontWeight: "bold" }}>Wire Transfer - PROMWORLD CO, LTD -HKHIM</p>
-                                <small style={{ color: "gray" }}>May 12, 2022. Checking</small>
+                                <small style={{ color: "gray" }}>May 12, 2021. Checking</small>
                             </div>
 
                             <div style={{ fontWeight: "bold", color: "red" }}>
@@ -163,8 +163,8 @@ export default function Dashboard() {
                         {/* Txn */}
                         <div className="txn-item" style={{ marginRight: 10 }}>
                             <div>
-                                <p style={{ fontWeight: "bold" }}>Wire Transfer - INTERAC</p>
-                                <small style={{ color: "gray" }}>Jul 27, 2021. Checking</small>
+                                <p style={{ fontWeight: "bold" }}>Wire Transfer - Client Refund-Dennis Hicks</p>
+                                <small style={{ color: "gray" }}>Nov 27, 2020. Checking</small>
                             </div>
 
                             <div style={{ fontWeight: "bold", color: "red" }}>
@@ -175,8 +175,8 @@ export default function Dashboard() {
                         {/* Txn */}
                         <div className="txn-item" style={{ marginRight: 10 }}>
                             <div>
-                                <p style={{ fontWeight: "bold" }}>Wire Transfer - Client Refund-Dennis Hicks</p>
-                                <small style={{ color: "gray" }}>Jul 27, 2021. Checking</small>
+                                <p style={{ fontWeight: "bold" }}>Wire Transfer - INTERAC</p>
+                                <small style={{ color: "gray" }}>Apr 19, 2021. Checking</small>
                             </div>
 
                             <div style={{ fontWeight: "bold", color: "red" }}>
@@ -192,7 +192,7 @@ export default function Dashboard() {
                             </div>
 
                             <div style={{ fontWeight: "bold", color: "green" }}>
-                                $45,000,000.77
+                                $45,000,000.37
                             </div>
                         </div>
                     </div>

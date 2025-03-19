@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./css/homepage.css";
 import React from "react";
 import Cancel from "../assets/cancel.png";
